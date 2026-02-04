@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script src="javascripts/renameCode.js"></script>
+</head>
+<body>
+<link rel="stylesheet" href="stylesheets/Extra.css">
+
+<h1>Cheesecake Order Form</h1>
+<img src="https://th.bing.com/th/id/R.268a017a7899a40c8ffe38558e98679f?rik=uqqhBMlulBfCuw&riu=http%3a%2f%2flisaswritopia.com%2fwp-content%2fuploads%2f2015%2f07%2fcheesecake-with-strawberry-sauce-wikimedia-commons.jpg&ehk=BhqfVN%2fSrbRbeogFHwILmvAUyfUGnXf8XtI%2b9Nvn2lc%3d&risl=&pid=ImgRaw&r=0">
+
+<p id="quantity">Quantity Topping</p>
+<table id="toppingTable">
+<tr></tr> <!-- Weirdly formated table makes 3 rows, where the first slot in the top and bottom are empty to make correct spacing-->
+	<td></td>
+<tr></tr>
+	<td></td>
+    <td><input type="radio" id="plain" name="topping">
+		<label for="plain">Plain</label><br></td>
+<tr></tr>
+	<td><select name="toppings"> 
+ 		<option value="1">1</option>
+ 		<option value="2" margin="200">2</option>
+ 		<option value="3">3</option>
+ 		</select></td>
+    <td><input type="radio" id="cherry" name="topping">
+		<label for="cherry">Cherry</label><br></td>
+<tr></tr>
+	<td></td>
+    <td><input type="radio" id="chocolate" name="topping">
+		<label for="chocolate">Cholocate</label></td>
+</table>
+
+
+<p id="notes"><b>Notes:</b></p><!--Second table for inline special orders-->
+<table id="textTable">
+	<tr></tr>
+		<td><textarea id="specialText" name="specialText" placeholder="Enter any special instructions here." rows="5" cols="40"></textarea><br></td>
+		<td><h2 id="special"></h2></td>
+	<tr></tr>
+		<td><button type="button" onclick="changeText()" >Order</button></td>
+</table>
+ 
+
+<table> <!--Table for date hover dropdown-->
+	<tr></tr>
+		<td><h3><b>Orders For </b></h3></td>
+		<td>
+			<div class="dropdown">
+			<button class="dropbtn" id="dateButton">Jan</button>
+			<div class="dropdown-content">
+				<a href="#" onclick='changeDate("Jan")'>Jan</a>
+				<a href="#" onclick='changeDate("Feb")'>Feb</a>
+				<a href="#" onclick='changeDate("Mar")'>Mar</a>
+				<a href="#" onclick='changeDate("Apr")'>Apr</a>
+				<a href="#" onclick='changeDate("May")'>May</a>
+				<a href="#" onclick='changeDate("Jun")'>Jun</a>
+				<a href="#" onclick='changeDate("Jul")'>Jul</a>
+				<a href="#" onclick='changeDate("Aug")'>Aug</a>
+				<a href="#" onclick='changeDate("Sep")'>Sep</a>
+				<a href="#" onclick='changeDate("Oct")'>Oct</a>
+				<a href="#" onclick='changeDate("Nov")'>Nov</a>
+				<a href="#" onclick='changeDate("Dec")'>Dec</a>
+			</div>
+			</div></td>
+</table>
+
+
+<ul>
+  <li>11 Cherry</li>
+  <li>13 Chocolate</li>
+  <li>31 Plain</li>
+</ul>
+
+
+</body>
+</html>
+

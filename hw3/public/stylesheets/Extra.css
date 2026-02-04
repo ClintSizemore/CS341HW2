@@ -1,0 +1,65 @@
+/* Initial page changes for Prettieness (I think i submited the wrong css file for HW1*/
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+body {
+  background-color: lightblue;
+}
+p {
+  font-family: Lucida Handwriting;
+}
+h4 {
+  font-family: Copperplate;
+}
+h3 {
+  font-family: Papyrus;
+}
+/* Code for the customization for the hover drop down menu*/
+/* Dropdown Button ---- Sourced from W3 Code Website page on Hover Dropdowns*/
+.dropbtn {
+  background-color: #8da9ff;
+  color: black;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  font-family: Papyrus;
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+div.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  max-block-size: 120px;
+  overflow-y: scroll;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+/* Dates inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown dates on hover */
+.dropdown-content a:hover {background-color: #ffff00;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
